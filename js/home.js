@@ -271,43 +271,10 @@ city="Дилижан";
     }
     changeLang()
 let showMenu
-menuBtn.addEventListener("click",function(){
-    MiniMenu.classList.toggle("showMenu");
-    socialMedia.classList.toggle("showMenu")
-    faXmark.classList.toggle("showMenu");
-    faBars.classList.toggle("hidden")
-})
 
-rightBtn.addEventListener("click",function(){
-    let left
-    
-    if(carousel.getBoundingClientRect().right<document.documentElement.clientWidth){
-        left=carousel.getBoundingClientRect().left
-       
-    }else{
-        left=carousel.getBoundingClientRect().left-servicesText.offsetWidth-160;
-    }
+
+
+
+
+
    
-    console.log(left)
-
-    carousel.style.transform=`translate(${left}px)`
-})
-leftBtn.addEventListener("click",function(){
-    let right
-   if(carousel.getBoundingClientRect().left<0){
-    right=carousel.getBoundingClientRect().left+servicesText.offsetWidth+160;
-   }else{
-    right=0
-   }
-   
-   carousel.style.transform=`translate(${right}px)`
-})
-
-document.body.onload=function(){
-    setTimeout(function(){
-        let preloader=document.querySelector(".preloader")
-        preloader.classList.add("hidden")
-
-    },1000)
-   
-}
