@@ -699,7 +699,12 @@ iframe{
     font-size: 20px;
   }
   .fa-solid{
+    color:white;
     font-size: 15px;
+  }
+  .btn-next,
+  .btn-prev{
+    background-color: transparent;
   }
   .services-text{
     width: 300px;
